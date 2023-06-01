@@ -1,0 +1,53 @@
+<odoo>
+  <data>
+    <!-- Pagina formulario -->
+    
+    <record model="ir.ui.view" id="hidro_isca_app.agua_model_form">
+      <field name="name">Agua Form</field>
+      <field name="model">hidro_isca_app.agua_model</field>
+      <field name="arch" type="xml">
+        <form string="Agua">
+          <sheet>
+            <group name="top">
+              <group name="left">
+                <field name="valor_agua"/>                 
+              </group>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+
+
+
+
+<!-- Pagina de lista // sheet -->
+   <record model="ir.ui.view" id="hidro_isca_app.agua_model_list">
+      <field name="name">Agua List</field>
+      <field name="model">hidro_isca_app.agua_model</field>
+      <field name="arch" type="xml">
+        <!-- Orden de la lista y la decoracion se relaciona con: is_done del MODELO-->
+        <tree>
+          <!-- Columnas que apareceran en la lista, tienen que tener el mismo nombre en el MODELO  -->
+          <field name="valor_agua_with_euro"/>
+          
+        </tree>
+      </field>
+    </record>
+  <!-- Acciones del menu // Binding/Enlazar con el modelo-->
+  
+  <record model="ir.actions.act_window" id="hidro_isca_app.action_window_agua">
+    <field name="name"> Agua Window</field>
+    <field name="res_model">hidro_isca_app.agua_model</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+
+ 
+
+</data>
+</odoo>
+
+  
+      

@@ -1,0 +1,61 @@
+<odoo>
+  <data>
+    <!-- Pagina formulario -->
+    
+    <record model="ir.ui.view" id="hidro_isca_app.entidad_model_form">
+      <field name="name">Entidad Form</field>
+      <field name="model">hidro_isca_app.entidad_model</field>
+      <field name="arch" type="xml">
+        <form string="Entidad">
+          <sheet>
+            <group name="top">
+              <group name="left">
+                <field name="name"/>
+                <field name="direccion"/> 
+                <field name="poblacion"/>
+                <field name="provincia"/>                           
+              </group>
+              <group name="right">
+                <field name="contadores"/>
+              </group>  
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+
+
+
+
+<!-- Pagina de lista // sheet -->
+   <record model="ir.ui.view" id="hidro_isca_app.entidad_model_list">
+      <field name="name">Entidad List</field>
+      <field name="model">hidro_isca_app.entidad_model</field>
+      <field name="arch" type="xml">
+        <!-- Orden de la lista y la decoracion se relaciona con: is_done del MODELO-->
+        <tree>
+          <!-- Columnas que apareceran en la lista, tienen que tener el mismo nombre en el MODELO  -->
+          <field name="name"/>
+          <field name="direccion"/> 
+          <field name="poblacion"/>
+          <field name="provincia"/>     
+        </tree>
+      </field>
+    </record>
+  <!-- Acciones del menu // Binding/Enlazar con el modelo-->
+  
+  <record model="ir.actions.act_window" id="hidro_isca_app.action_window_entidad">
+    <field name="name"> Entidad Window</field>
+    <field name="res_model">hidro_isca_app.entidad_model</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+
+ 
+
+</data>
+</odoo>
+
+  
+      

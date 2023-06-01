@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hidro_isca_app_usuarios_model,hidro_isca_app.usuarios_model,model_hidro_isca_app_usuarios_model,,1,1,1,1
+access_hidro_isca_app_consumo_model,hidro_isca_app.consumo_model,model_hidro_isca_app_consumo_model,,1,1,1,1
+access_hidro_isca_app_entidad_model,hidro_isca_app.entidad_model,model_hidro_isca_app_entidad_model,,1,1,1,1
+access_hidro_isca_app_recivo_model,hidro_isca_app.recivo_model,model_hidro_isca_app_recivo_model,,1,1,1,1
+access_hidro_isca_app_agua_model,hidro_isca_app.agua_model,model_hidro_isca_app_agua_model,,1,1,1,1
+
+access_hidro_isca_app_contador_model,hidro_isca_app.contador_model,model_hidro_isca_app_contador_model,,1,1,1,1

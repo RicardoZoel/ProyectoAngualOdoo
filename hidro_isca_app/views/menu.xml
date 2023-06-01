@@ -1,0 +1,34 @@
+<odoo>
+    <data>
+        <menuitem name="Hidro isca app" id="hidro_isca_app.menu_root"/>
+    
+        <!-- menu categories -->
+    
+        <menuitem name="Entidades" id="hidro_isca_app.menu_entidades" parent="hidro_isca_app.menu_root"/>
+        <menuitem name="Contablididad" id="hidro_isca_app.menu_contabilidad" parent="hidro_isca_app.menu_root"/>
+
+        <!--<menuitem name="Categories" id="hidro_isca_app.menu_categories" parent="hidro_isca_app.menu_root"/>-->
+    
+    
+    
+        <!-- actions -->
+        <menuitem name="Usuarios" id="hidro_isca_app.menu_usuarios_list" parent="hidro_isca_app.menu_entidades"
+                action="hidro_isca_app.action_window_usuarios"/>
+        <menuitem name="Contadores" id="hidro_isca_app.menu_contadores_list" parent="hidro_isca_app.menu_entidades"
+                action="hidro_isca_app.action_window_contador"/>
+        <menuitem name="Entidad" id="hidro_isca_app.menu_entidades_list" parent="hidro_isca_app.menu_entidades"
+                action="hidro_isca_app.action_window_entidad"/>
+
+
+        <menuitem name="Agua" id="hidro_isca_app.menu_agua_list" parent="hidro_isca_app.menu_contabilidad"
+            action="hidro_isca_app.action_window_agua"/>
+        <menuitem name="Consumos" id="hidro_isca_app.menu_consumo_list" parent="hidro_isca_app.menu_contabilidad"
+            action="hidro_isca_app.action_window_consumo"/>
+        <menuitem name="Recivos" id="hidro_isca_app.menu_recivos_list" parent="hidro_isca_app.menu_contabilidad"
+            action="hidro_isca_app.action_window_recivo"/>
+                  
+        <!--<menuitem name="Categories" id="hidro_isca_app.menu_categories_list" parent="hidro_isca_app.menu_categories"
+                  action="hidro_isca_app.action_window_categories"/>-->
+
+    </data>
+</odoo>

@@ -1,0 +1,71 @@
+<odoo>
+  <data>
+    <!-- Pagina formulario -->
+    
+    <record model="ir.ui.view" id="hidro_isca_app.usuarios_model_form">
+      <field name="name">Usuarios Form</field>
+      <field name="model">hidro_isca_app.usuarios_model</field>
+      <field name="arch" type="xml">
+        <form string="Usuarios">
+          <sheet>
+            <group name="top">
+              <group name="left">
+                <field name="name"/>
+                <field name="apellido"/>
+                <field name="direccion"/> 
+                <field name="poblacion"/>
+                <field name="provincia"/>                           
+              </group>
+              <group name="right">
+                <field name="nif"/>
+                <field name="cuenta_bancaria"/>
+                <field name="telefono"/>
+                <field name="consumos_mensuales"/>
+                <field name="recivos"/>
+              </group>  
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+
+
+
+
+<!-- Pagina de lista // sheet -->
+   <record model="ir.ui.view" id="hidro_isca_app.usuarios_model_list">
+      <field name="name">Usuarios List</field>
+      <field name="model">hidro_isca_app.usuarios_model</field>
+      <field name="arch" type="xml">
+        <!-- Orden de la lista y la decoracion se relaciona con: is_done del MODELO-->
+        <tree>
+          <!-- Columnas que apareceran en la lista, tienen que tener el mismo name en el MODELO  -->
+          <field name="name"/>
+                <field name="apellido"/>
+                <field name="direccion"/> 
+                <field name="poblacion"/>
+                <field name="provincia"/>    
+                <field name="nif"/>
+                <field name="cuenta_bancaria"/>
+                <field name="telefono"/>
+          
+        </tree>
+      </field>
+    </record>
+  <!-- Acciones del menu // Binding/Enlazar con el modelo-->
+  
+  <record model="ir.actions.act_window" id="hidro_isca_app.action_window_usuarios">
+    <field name="name"> Usuarios Window</field>
+    <field name="res_model">hidro_isca_app.usuarios_model</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+
+ 
+
+</data>
+</odoo>
+
+  
+      
